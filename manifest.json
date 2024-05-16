@@ -1,0 +1,26 @@
+{
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "id@example.com"
+        }
+    },
+    "manifest_version": 2,
+    "name": "",
+    "version": "1.0",
+    "author": "E.SCHOEPF",
+    "description": "",
+    "permissions": [
+        "notifications",
+        "menus",
+        "activeTab",
+        "storage",
+        "webRequest",
+        "cookies",
+        "alarms"
+    ],
+    "background": {
+        "scripts": [
+            "consulter.js"
+        ]
+    }
+}
