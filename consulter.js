@@ -1,27 +1,27 @@
 function onCreated() {
     if (browser.runtime.lastError) {
-        console.error(`Erreur lors de la création d'un élément : ${browser.runtime.lastError}`);
+        console.error(`Erro ao criar o menu : ${browser.runtime.lastError}`);
     } else {
-        console.info("L'élément a été créé avec succès");
+        console.info("Menu criado com sucesso");
     }
 }
 
 function success() {
-    console.info("Onglet mis à jour");
+    console.info("Atualização bem-sucedida da página de pesquisa");
 }
 
 function error(error) {
-    console.error(`Erreur : ${error}`)
+    console.error(`Erro ao executar a busca : ${error}`)
 }
 
 browser.menus.create({
-    id: "id_example",
-    title: "title example",
+    id: "linkedIn",
+    title: "Buscar no LinkedIn",
     contexts: ["selection"]
 }, onCreated)
 
 browser.menus.onClicked.addListener((info, tab) => {
-    let url = "";
+    let url = "https://www.linkedin.com/jobs/search/?keywords=" + info.selectionText;
     cases(url, tab);
 })
 

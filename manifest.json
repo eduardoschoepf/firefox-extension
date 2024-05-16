@@ -1,22 +1,18 @@
 {
     "browser_specific_settings": {
         "gecko": {
-            "id": "id@example.com"
+            "id": "e.schoepf.dev@gmail.com"
         }
     },
     "manifest_version": 2,
     "name": "",
     "version": "1.0",
     "author": "E.SCHOEPF",
-    "description": "",
+    "description": "Esta extensão para Firefox permite que você busque instantaneamente por qualquer cargo selecionado, com um simples clique direito.",
     "permissions": [
-        "notifications",
         "menus",
         "activeTab",
-        "storage",
-        "webRequest",
-        "cookies",
-        "alarms"
+        "https://www.linkedin.com/*"
     ],
     "background": {
         "scripts": [
