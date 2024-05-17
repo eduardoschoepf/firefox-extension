@@ -16,7 +16,7 @@
     ],
     "background": {
         "scripts": [
-            "consulter.js"
+            "background.js"
         ]
     }
 }
