@@ -1,4 +1,5 @@
 # Extensão de pesquisa do LinkedIn  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 ## Descrição  
 Essa é uma extensão de navegador que permite que os usuários pesquisem empregos no LinkedIn diretamente no menu de contexto. Ao selecionar algum texto em uma página da Web e clicar com o botão direito do mouse, você verá uma opção para pesquisar vagas no LinkedIn usando o texto selecionado como palavra-chave de pesquisa.
