@@ -1,17 +1,25 @@
+function notifications(title, message) {
+    browser.notifications.create({
+        type:"basic",
+        title: title,
+        message: message
+    })
+}
+
 function onCreated() {
     if (browser.runtime.lastError) {
-        console.error(`Erro ao criar o menu : ${browser.runtime.lastError}`);
+        notifications("Erro", browser.runtime.lastError);
     } else {
-        console.info("Menu criado com sucesso");
+        notifications("Info", "Menu criado com sucesso");
     }
 }
 
 function success() {
-    console.info("Atualização bem-sucedida da página de pesquisa");
+    notifications("Info", "Atualização bem-sucedida da página de pesquisa");
 }
 
 function error(error) {
-    console.error(`Erro ao executar a busca : ${error}`)
+    notifications("Erro", `Erro ao executar a busca : ${error}`)
 }
 
 browser.menus.create({

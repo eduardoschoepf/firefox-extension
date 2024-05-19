@@ -12,6 +12,7 @@
     "permissions": [
         "menus",
         "activeTab",
+        "notifications",
         "https://www.linkedin.com/*"
     ],
     "background": {
